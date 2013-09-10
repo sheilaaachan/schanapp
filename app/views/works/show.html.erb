@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Start date:</b>
+  <%= @work.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @work.end_date %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @work.company %>
+</p>
+
+<p>
+  <b>Team:</b>
+  <%= @work.team %>
+</p>
+
+<p>
+  <b>Role:</b>
+  <%= @work.role %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @work.location %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @work.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_work_path(@work) %> |
+<%= link_to 'Back', works_path %>
