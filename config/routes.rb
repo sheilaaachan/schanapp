@@ -1,13 +1,13 @@
 Schanapp::Application.routes.draw do
+
+  match 'signup' => 'users#new', :as => :signup
+  match 'logout' => 'sessions#destroy', :as => :logout
+  match 'login' => 'sessions#new', :as => :login
+
+  
   resources :attachments
-
-
   resources :projects
-
-
   resources :works
-
-
   resources :users
 
 
