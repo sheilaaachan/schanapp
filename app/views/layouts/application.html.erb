@@ -23,8 +23,11 @@
 		<%= yield %>
 
 		<hr>
-		<%= link_to	":contact_us", home_contact_path, :class=>"nav-link" %>
-		<%= link_to	":about_me", home_about_path, :class=>"nav-link" %>
+		<div class="contact_div">
+		<%= link_to image_tag('email.png', :class => "contact_icon"), "mailto:sheilachan@cmu.edu" %>
+		<%= link_to image_tag('facebook.png', :class => "contact_icon"), "https://www.facebook.com/sheila.chan.54" %>
+		<%= link_to image_tag('linkedin.png', :class => "contact_icon"), "http://www.linkedin.com/pub/sheila-chan/50/677/75b" %>
+		</div>
 
 	</div>
 </body>

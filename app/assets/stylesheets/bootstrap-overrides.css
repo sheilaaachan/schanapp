@@ -68,3 +68,11 @@
 	width: 500px;
 }
 
+.contact_icon{
+	width: 40px;
+	margin: 20px;
+}
+.contact_div{
+	display: block; 
+	text-align: center;
+}
