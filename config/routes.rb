@@ -10,6 +10,9 @@ Schanapp::Application.routes.draw do
   resources :works
   resources :users
 
+  get 'home/contact' => 'home#contact'
+  get 'home/about' => 'home#about'
+
 
 
   # The priority is based upon order of creation:

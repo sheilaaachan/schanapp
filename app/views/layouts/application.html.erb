@@ -6,9 +6,26 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="body">
 	<div class="container">
+		<div class="nav">
+			<div class="nav-logo">
+			<h1 class="page-head"><%= link_to 'SHEILA CHAN', root_path %></h1>
+		</div>
+		<div class="nav-links">
+			<%= link_to	":projects", projects_path, :class=>"nav-link" %>
+			<%= link_to	":work_experience", works_path, :class=>"nav-link" %>
+			<%= link_to	":attachments", attachments_path, :class=>"nav-link" %>
+		</div>
+	</div>
+		<hr style="margin-top:0;">
+
 		<%= yield %>
+
+		<hr>
+		<%= link_to	":contact_us", home_contact_path, :class=>"nav-link" %>
+		<%= link_to	":about_me", home_about_path, :class=>"nav-link" %>
+
 	</div>
 </body>
 </html>

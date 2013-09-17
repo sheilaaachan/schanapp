@@ -21,7 +21,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'rmagick'
+gem 'carrierwave'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'simple_form'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

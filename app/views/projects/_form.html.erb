@@ -1,61 +1,20 @@
-<%= form_for(@project) do |f| %>
-  <% if @project.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+<%= simple_form_for @project, :html => { :class => 'form-horizontal', :multipart => true } do |f| %>
+  <fieldset>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :start_date %>
+    <%= f.input :end_date %>
+    <%= f.input :course %>
+    <%= f.input :collaborators %>
+    <%= f.input :role %>
+    <%= f.input :skills %>
+    <%= f.input :type, :collection => Project::PROJECT_TYPES %>
+    <%= f.input :work_id %>
+    <%= f.input :image %>
 
-      <ul>
-      <% @project.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+    <div class="form-actions">
+      <%= f.submit nil %>
+      <%= link_to 'Cancel', projects_path, :class => 'btn' %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :start_date %><br />
-    <%= f.datetime_select :start_date %>
-  </div>
-  <div class="field">
-    <%= f.label :end_date %><br />
-    <%= f.datetime_select :end_date %>
-  </div>
-  <div class="field">
-    <%= f.label :course %><br />
-    <%= f.text_field :course %>
-  </div>
-  <div class="field">
-    <%= f.label :collaborators %><br />
-    <%= f.text_field :collaborators %>
-  </div>
-  <div class="field">
-    <%= f.label :role %><br />
-    <%= f.text_field :role %>
-  </div>
-  <div class="field">
-    <%= f.label :skills %><br />
-    <%= f.text_field :skills %>
-  </div>
-  <div class="field">
-    <%= f.label :type %><br />
-    <%= f.text_field :type %>
-  </div>
-  <div class="field">
-    <%= f.label :work_id %><br />
-    <%= f.number_field :work_id %>
-  </div>
-  <div class="field">
-    <%= f.label :image %><br />
-    <%= f.file_field :image %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  </fieldset>
 <% end %>

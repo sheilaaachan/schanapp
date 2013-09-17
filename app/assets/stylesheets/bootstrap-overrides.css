@@ -1,0 +1,70 @@
+.home-div{
+	padding-top: 250px;
+}
+.home-div .home-div-sheila{
+	border-right: thin solid #CACACA;
+	padding-bottom: 60px;
+}
+.home-div .home-div-sheila .home-div-sheila-text{
+	float: right;
+}
+.home-div .home-div-menu{
+	padding-top: 100px;
+}
+
+.home-header{
+	font-size: 70px;
+	font-family: 'HelveticaNeue-UltraLight';
+}
+.page-head{
+	font-family: 'HelveticaNeue-UltraLight';
+	border-bottom: 0px;
+}
+
+.nav{
+	display: block;
+}
+.nav-logo{
+	float: left;
+	display: inline-block;
+}
+.nav-links{
+	float: right;
+	padding-top: 40px;
+	display: inline-block;
+}
+.nav-link{
+	padding: 10px;
+	/*letter-spacing: 1.5px;*/
+}
+
+.image-thumb{
+	max-height: 250px;
+	max-width: 250px;
+	height: auto;
+	width: 250px;
+}
+
+.index-thumb{
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	margin: 30px 2px 30px 2px;
+}
+#index-pics{
+	text-align: justify;
+}
+
+.show-sidebar{
+	display: inline-block;
+	float: right;
+	width: 200px;
+	background-color: #F7F7F7;
+	padding: 20px;
+}
+.show-main{
+	display: inline-block;
+	float: left;
+	width: 500px;
+}
+

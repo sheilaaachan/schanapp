@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  project_photo_file_name: MyString
+  project_photo_content_type: MyString
+  project_photo_file_size: 1
+  project_id: 1
+
+two:
+  project_photo_file_name: MyString
+  project_photo_content_type: MyString
+  project_photo_file_size: 1
+  project_id: 1

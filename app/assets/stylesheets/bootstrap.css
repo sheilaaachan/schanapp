@@ -429,6 +429,7 @@ h6 {
 h1,
 .h1 {
   font-size: 36px;
+  letter-spacing: 3px;
 }
 h2,
 .h2 {
@@ -445,6 +446,7 @@ h4,
 h5,
 .h5 {
   font-size: 14px;
+  letter-spacing: 2px;
 }
 h6,
 .h6 {
@@ -645,8 +647,8 @@ pre code {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .container:before,
 .container:after {
@@ -673,8 +675,8 @@ pre code {
   clear: both;
 }
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -2px;
+  margin-right: -2px;
 }
 .row:before,
 .row:after {

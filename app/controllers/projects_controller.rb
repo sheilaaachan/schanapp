@@ -14,6 +14,8 @@ class ProjectsController < ApplicationController
   # GET /projects/1.json
   def show
     @project = Project.find(params[:id])
+    @photos = @project.project_photos
+    @project.project_photos.build
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,6 +27,7 @@ class ProjectsController < ApplicationController
   # GET /projects/new.json
   def new
     @project = Project.new
+    @project.project_photos.build
 
     respond_to do |format|
       format.html # new.html.erb
